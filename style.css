@@ -1,0 +1,900 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN:wght@100..400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to right, #f4405e,#650fb6);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+}
+
+.logo h1{
+    font-family: "Playwrite IN", serif;
+    visibility: hidden;
+    animation: logo 1s linear forwards;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 0 15px;
+    animation: ul-li 1s linear forwards;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    background-color: #650fb6;
+    padding: 10px 20px;
+    transition: background-color 0.6s linear;
+    border-radius: 5px;
+}
+
+@keyframes logo{
+    0%{
+        transform: translateX(-300px);
+    }
+
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes ul-li{
+    0%{
+        transform: translateY(-100px);
+    }
+
+    100%{
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+.container{
+    width: 100%;
+    height: 83vh;
+    background: linear-gradient(to right, #f4405e,#650fb6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 120px;
+    color: white;
+}
+
+.left h1{
+    font-size: 60px;
+    animation: left-h1 ease 1.5s forwards;
+    visibility: hidden;
+}
+
+.left p{
+    font-size: 25px;
+    padding: 20px 0;
+    animation: left-p ease 1.5s forwards;
+    visibility: hidden;
+}
+
+.left button{
+    color: white;
+    background-color: #fd3daa;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    animation: left-button ease 2s forwards;
+    visibility: hidden;
+    transition: background-color 0.5s ease-in;
+    cursor: pointer;
+}
+
+.left button:hover{
+    background-color: white;
+    color: #fd3daa;
+    font-weight: bold;
+    transition: background-color 1s ease-in;
+}
+
+.right img{
+    filter: drop-shadow(20px 20px 30px rgba(0,0,0,0.8));
+    padding: 20px 0 0 0;
+    visibility: hidden;
+    animation: right-img 1.5s ease-out forwards;
+    cursor: no-drop;
+}
+
+@keyframes left-h1{
+    0%{
+        transform: translateY(-100px);
+    }
+
+    100%{
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@keyframes left-p{
+    0%{
+        transform: translateY(100px);
+    }
+
+    100%{
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@keyframes left-button{
+    0%{
+        transform: scale(0.5);
+    }
+
+    100%{
+        visibility: visible;
+        transform: scale(1.1);
+    }
+}
+
+@keyframes right-img{
+    from{
+        transform: translateX(400px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+
+
+.navbar{
+    width: 100%;
+    height: 100vh;
+    background-color: #131313ee;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.banner h3{
+    color: #686767ee;
+    padding-top: 50px;
+    animation: banner-h3 1s ease forwards;
+    visibility: hidden;
+    animation-delay: 1s;
+}
+
+.banner h1{
+    padding: 10px 0 30px 0;
+    animation: banner-h1 1.5s ease forwards;
+    visibility: hidden;
+    animation-delay: 1s;
+}
+
+.banner img{
+    width: 900px;
+    height: 400px;
+    transition: 1s ease;
+    cursor: no-drop;
+}
+
+.banner img:hover{
+    transform: scale(1.05);
+}
+
+@keyframes banner-h3{
+    from{
+        transform: translateY(-100px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@keyframes banner-h1{
+    from{
+        transform: translateX(-700px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+
+.card{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 150px;
+}
+
+.right1 img{
+    width: 260px;
+    height: 420px;
+    transition: 1s linear;
+    cursor: no-drop;
+}
+
+.right1 img:hover{
+    transform: scale(1.1);
+}
+
+.left1 h3{
+    opacity: 0.3;
+    animation: left1-h3 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 2s;
+}
+
+.left1 p{
+    opacity: 0.6;
+    line-height: 25px;
+    animation: left1-p 1s linear forwards;
+    visibility: hidden;
+    animation-delay: 2s;
+}
+
+.left1 h1{
+    padding: 30px 0 60px 0;
+    animation: left1-h1 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 2s;
+}
+
+@keyframes left1-h3{
+    from{
+        transform: translateY(-200px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@keyframes left1-h1{
+    from{
+        transform: translateX(200px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+@keyframes left1-p{
+    from{
+        transform: translateY(200px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+
+.card1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 150px;
+}
+
+.right2 img{
+    transition: 1s ease-in;
+    cursor: no-drop;
+}
+
+.right2 img:hover{
+    transform: scale(1.1);
+}
+
+.left2 h3{
+    opacity: 0.3;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: left2-h3 1s ease-in-out forwards;
+    visibility: hidden;
+    animation-delay: 3s;
+}
+
+.left2 p{
+    opacity: 0.6;
+    line-height: 25px;
+    animation: left2-p 1s ease-in-out forwards;
+    visibility: hidden;
+    animation-delay: 3s;
+}
+
+.left2 h1{
+    padding: 20px 0 30px 0;
+    font-size: 36px;
+    animation: left2-h1 1.5s ease-in-out forwards;
+    visibility: hidden;
+    animation-delay: 3s;
+}
+
+@keyframes left2-h3{
+    from{
+        transform: translateY(-200px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@keyframes left2-p{
+    from{
+        transform: translateY(200px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@keyframes left2-h1{
+    from{
+        transform: translateX(-200px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+
+.card2{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 150px;
+}
+
+.right3 img{
+    width: 300px;
+    height: 450px;
+    transition: 1s ease-out;
+    cursor: no-drop;
+}
+
+.right3 img:hover{
+    transform: scale(1.1);
+}
+
+.left3 h3{
+    opacity: 0.3;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    animation: left3-h3 1s linear forwards;
+    visibility: hidden;
+    animation-delay: 4s;
+}
+
+.left3 p{
+    opacity: 0.6;
+    line-height: 25px;
+    animation: left3-p 1s linear forwards;
+    visibility: hidden;
+    animation-delay: 4s;
+}
+
+.left3 h1{
+    padding: 20px 0 30px 0;
+    font-size: 36px;
+    animation: left3-h1 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 4s;
+}
+
+@keyframes left3-h3{
+    from{
+        transform: translateY(-200px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@keyframes left3-p{
+    from{
+        transform: translateY(200px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@keyframes left3-h1{
+    from{
+        transform: translateX(-200px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+
+.box{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.box1 h2{
+    padding: 20px 0;
+}
+
+.box1 p{
+    line-height: 25px;
+}
+
+.box1{
+    transition: 1s linear;
+    cursor: pointer;
+}
+
+.box1:hover{
+    transform: scale(1.1);
+}
+
+
+.text{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.text1{
+    transition: 1s linear;
+    cursor: pointer;
+}
+
+.text1:hover{
+    transform: scale(1.2);
+}
+
+.text1 h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+
+.container1{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+.right4 img{
+    transition: 1s linear;
+    cursor: pointer;
+}
+
+.right4 img:hover{
+    transform: rotate(10deg);
+}
+
+.left4 h3{
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    animation: left4-h3 1s linear forwards;
+    visibility: hidden;
+    animation-delay: 5s;
+}
+
+.left4 h1{
+    font-size: 40px;
+    padding: 20px 0;
+    animation: left4-h1 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 5s;
+}
+
+.left4 p{
+    line-height: 25px;
+    color: #727171;
+    animation: left4-p 1s linear forwards;
+    visibility: hidden;
+    animation-delay: 5s;
+}
+
+.left4 span{
+    text-decoration: underline;
+    color: #3f3f3f;
+}
+
+@keyframes left4-h3{
+    from{
+        transform: translateY(-200px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+@keyframes left4-h1{
+    from{
+        transform: translateX(-200px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+@keyframes left4-p{
+    from{
+        transform: translateY(200px);
+    }
+
+    to{
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+
+.navbar1{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner1 p{
+    line-height: 30px;
+    font-size: 20px;
+    opacity: 0.6;
+    padding: 50px 0 20px 0;
+    animation: banner1-p 1ss ease-in forwards;
+    visibility: hidden;
+    animation-delay: 6s;
+}
+
+.banner1 img{
+    transition: 1s linear;
+    cursor: pointer;
+}
+
+.banner1 img:hover{
+    transform: rotate(180deg);
+}
+
+.banner1 h3{
+    color: #adacac;
+    animation: banner1-h3 1.5s ease-in forwards;
+    visibility: hidden;
+    animation-delay: 6s;
+}
+
+.banner1 span{
+    color: #727171;
+}
+
+@keyframes banner1-h3{
+    from{
+        transform: translateX(-500px);
+    }
+
+    to{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes banner1-p{
+    from{
+        transform: translateX(500px);
+    }
+
+    to{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+
+.icons{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: icons 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 7s;
+}
+
+@keyframes icons{
+    from{
+        transform: translateX(-700px);
+    }
+
+    to{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+
+.image img{
+    width: 1140px;
+    height: 400px;
+    animation: image 1.5s ease-out forwards;
+    visibility: hidden;
+    animation-delay: 7s;
+}
+
+@keyframes image{
+    from{
+        transform: scale(0.5);
+    }
+
+    to{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+
+.buttons{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #fd3daa,#8a0cc0);
+    color: white;
+}
+
+.button1 h1{
+    animation: buttons-h1 1s ease-in-out forwards;
+    visibility: hidden;
+    animation-delay: 8s;
+}
+
+.button1 button{
+    background-color: #f4405e;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    margin: 40px 2px;
+    font-weight: 500;
+    transition: 1s linear;
+    cursor: pointer;
+    animation: buttons 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 8s;
+}
+
+.button1 button:hover{
+    background-color: white;
+    color: #f4405e;
+    font-weight: bold;
+}
+
+@keyframes buttons{
+    0%{
+        transform: translateX(600px);
+    }
+
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+@keyframes buttons-h1{
+    0%{
+        transform: translateX(-600px);
+    }
+
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+
+
+.inputs{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #272626;
+    color: white;
+}
+
+.input1 h1{
+    font-size: 40px;
+    animation: input-h1 1s linear forwards;
+    visibility: hidden;
+    animation-delay: 9s;
+}
+
+.input1 h2{
+    font-size: 17px;
+    color: #6e6d6d;
+    padding: 20px 0 30px 0;
+    animation: input-h2 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 9s;
+}
+
+.input1{
+    position: relative; 
+}
+
+.input1 input{
+    padding: 15px 300px 15px 10px;  
+    animation: input 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 9s;
+}
+
+.input1 button{
+    position: absolute;
+    background-color: #fd3daa;
+    padding: 17px 25px;
+    border: none;
+    border-radius: 2px;
+    right: 0;
+    transition: background-color 0.5s linear,color 0.5s ease,width 1s ease-in;
+    animation: input 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 9s;
+}
+
+.input1 button:hover{
+    background-color: white;
+    color: #fd3daa;
+    border: 2px double #f4405e;
+    padding: 15px 25px;
+}
+
+@keyframes input-h1{
+    from{
+        transform: translateY(-100px);
+    }
+
+    to{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+@keyframes input-h2{
+    from{
+        transform: scale(0.5);
+    }
+
+    to{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+@keyframes input{
+    from{
+        transform: translateY(100px);
+    }
+
+    to{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    background-color: #272626;
+}
+
+.logo1 a{
+    color: #727171;
+    text-decoration: none;
+}
+
+.logo1 img{
+    transition: 1s linear;
+    animation: logo1-img 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 10s;
+}
+
+.logo1 ul li{
+    display: inline-block;
+    margin: 30px 20px;
+    animation: logo1-ul 1.5s linear forwards;
+    visibility: hidden;
+    animation-delay: 10s;
+}
+
+.logo1 a:active{
+    color: white;
+}
+
+@keyframes logo1-img{
+    from{
+        transform: scale(0.5);
+    }
+
+    to{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+@keyframes logo1-ul{
+    from{
+        transform: scale(1.3);
+    }
+
+    to{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
